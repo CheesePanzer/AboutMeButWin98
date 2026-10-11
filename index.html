@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuhao Sun's Windows 98-style software engineering portfolio.">
+  <meta name="theme-color" content="#008080">
+  <title>Yuhao Sun - Profile Properties</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="resume.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#profile">Skip to profile</a>
+
+  <div class="desktop-icons" aria-label="Desktop shortcuts">
+    <button class="desktop-shortcut" data-open-profile="general"><span class="desktop-icon computer-icon" aria-hidden="true"></span><span>About Me</span></button>
+    <button class="desktop-shortcut" data-open-profile="experience"><span class="desktop-icon folder-icon" aria-hidden="true"></span><span>Experience</span></button>
+    <button class="desktop-shortcut" data-open-profile="projects"><span class="desktop-icon project-icon" aria-hidden="true"></span><span>Projects</span></button>
+    <button class="desktop-shortcut" data-open-profile="education"><span class="desktop-icon notepad-icon" aria-hidden="true"></span><span>Education.txt</span></button>
+    <a href="mailto:ysunfz@connect.ust.hk"><span class="desktop-icon mail-icon" aria-hidden="true"></span><span>Email Yuhao</span></a>
+  </div>
+
+  <main class="desktop-workspace">
+    <section class="window profile-window" id="profile">
+      <div class="title-bar" id="profile-title-bar">
+        <div class="title-bar-text">Yuhao Sun - Profile Properties</div>
+        <div class="title-bar-controls"><button aria-label="Minimize" id="minimize-profile"></button><button aria-label="Maximize" id="maximize-profile"></button><button aria-label="Close" id="close-profile"></button></div>
+      </div>
+
+      <div class="window-body app-body">
+        <menu role="tablist" aria-label="Profile sections">
+          <li role="tab" aria-selected="true" data-tab="general"><button type="button">General</button></li>
+          <li role="tab" aria-selected="false" data-tab="experience"><button type="button">Experience</button></li>
+          <li role="tab" aria-selected="false" data-tab="projects"><button type="button">Projects</button></li>
+          <li role="tab" aria-selected="false" data-tab="education"><button type="button">Education</button></li>
+        </menu>
+
+        <div class="window tab-workspace" role="tabpanel" id="panel-general" data-panel="general">
+          <div class="window-body profile-content">
+            <div class="avatar-98" aria-hidden="true"><span>YS</span></div>
+            <div class="profile-copy">
+              <div class="profile-heading">
+                <h1>Yuhao SUN</h1>
+                <button class="resume-launch" type="button" id="open-resume"><span class="resume-launch-icon" aria-hidden="true">📄</span><span><b>View Resume</b><small>Open Resume.md in Notepad</small></span></button>
+              </div>
+              <p class="role-title">Software Development Engineer</p>
+              <p>Full-stack engineer experienced in translating complex workflows into dependable CPQ, e-commerce, ERP, rules engine, and document automation solutions.</p>
+              <fieldset>
+                <legend>Current profile</legend>
+                <div class="property-grid"><span>Location:</span><strong>Hong Kong SAR</strong><span>Education:</span><strong>MSc in Information Technology, HKUST</strong><span>Expected:</span><strong>June 2027</strong><span>Core stack:</span><strong>.NET, Blazor, Python</strong><span>Domains:</span><strong>CPQ, ERP, Commerce</strong></div>
+              </fieldset>
+              <fieldset>
+                <legend>Technical capabilities</legend>
+                <div class="capability-grid"><div><b>Application</b><span>C#, ASP.NET Core, MVC, Blazor WebAssembly, Entity Framework Core</span></div><div><b>Services</b><span>Python, FastAPI, RESTful APIs, asynchronous processing, Stripe API</span></div><div><b>Data</b><span>SQL, PostgreSQL, Oracle, Redis, JasperReports, data migration</span></div><div><b>Approach</b><span>Business process analysis, system design, full-lifecycle delivery, production support</span></div></div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="profile-buttons"><button class="default" data-tab-target="experience">View Experience</button><a href="mailto:ysunfz@connect.ust.hk"><button>Email</button></a><a href="https://linkedin.com/in/yuhao-sun-7702b8431" target="_blank" rel="noreferrer"><button>LinkedIn</button></a></div>
+        </div>
+
+        <div class="window tab-workspace explorer-panel" role="tabpanel" id="panel-experience" data-panel="experience" hidden>
+          <div class="toolbar"><button data-tab-target="general">↑ Up</button><button data-tab-target="projects">Projects</button><span class="address-label">Address</span><input value="C:\Yuhao\Experience" readonly aria-label="Current path"></div>
+          <div class="explorer-layout">
+            <aside class="folder-tree">
+              <p><b>Folders</b></p>
+              <ul class="tree-view">
+                <li>🖥️ Yuhao Sun
+                  <ul>
+                    <li><span class="tree-label active">📂 Experience</span>
+                      <ul><li>📄 Freelance</li><li>📄 Best Friend Rubber</li><li>📄 HEADING</li></ul>
+                    </li>
+                    <li><button class="tree-button" data-tab-target="projects">📁 Projects</button></li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+
+            <div class="explorer-content">
+              <article class="job-file">
+                <header><span class="file-icon">📄</span><div><h2>Freelance Software Engineer</h2><p>Self-Employed · Guangzhou, China</p></div><time>April 2026 - August 2026</time></header>
+                <ul><li>Engineered a custom e-commerce platform for an Australian swimming pool accessories retailer, supporting the complete order lifecycle and Stripe payment processing.</li><li>Built an ASP.NET Core MVC storefront and a Blazor WebAssembly back-office portal for inventory, catalog, and transactional email management.</li><li>Enhanced an existing CPQ system and developed a technical data sheet generation module.</li></ul>
+                <p class="related-row"><b>Related:</b> <button class="link-button" data-open-project="project-ceryle">Ceryle</button></p>
+                <div class="tag-row"><span>ASP.NET Core</span><span>Blazor WASM</span><span>Stripe</span><span>E-commerce</span></div>
+              </article>
+              <article class="job-file selected-file">
+                <header><span class="file-icon">📄</span><div><h2>Software Development Engineer</h2><p>Qingdao Best Friend Rubber &amp; Plastic Co., Ltd. · Qingdao, China</p></div><time>March 2025 - March 2026</time></header>
+                <ul><li>Owned the design, development, deployment, and maintenance of an internal CPQ platform used by more than 40 sales professionals.</li><li>Replaced fragmented spreadsheets with integrated product selection, configuration, cost estimation, pricing, and quotation workflows.</li><li>Built interactive selection in Blazor WebAssembly and quotation workflows in ASP.NET Core MVC with Entity Framework Core.</li><li>Implemented RBAC, data authorization, asynchronous processing, caching, a configurable rules engine, and a FastAPI document generation service.</li></ul>
+                <p class="related-row"><b>Related:</b> <button class="link-button" data-open-project="project-cpq">CPQSystem Core</button> · <button class="link-button" data-open-project="project-selection">Belt Selection</button> · <button class="link-button" data-open-project="project-ceryle">Ceryle</button></p>
+                <div class="tag-row"><span>C#</span><span>Blazor WASM</span><span>EF Core</span><span>FastAPI</span><span>CPQ</span></div>
+              </article>
+              <article class="job-file">
+                <header><span class="file-icon">📄</span><div><h2>Software Implementation Engineer</h2><p>Shanghai HEADING Information Engineering Co., Ltd. · Guangzhou, China</p></div><time>June 2024 - December 2024</time></header>
+                <ul><li>Developed and migrated more than 200 operational and management reports using SQL and JasperReports.</li><li>Supported ERP customization, integration testing, upgrades, and migration, including reconciliation of more than RMB 2 million in stored-value card balances.</li><li>Performed initial issue triage, connected customers with developers, and supported production defect resolution.</li></ul>
+                <div class="tag-row"><span>SQL</span><span>Oracle</span><span>JasperReports</span><span>ERP</span></div>
+              </article>
+            </div>
+
+          </div>
+          <div class="status-bar"><p class="status-bar-field">3 object(s)</p><p class="status-bar-field">Career history loaded successfully</p></div>
+        </div>
+
+        <div class="window tab-workspace explorer-panel" role="tabpanel" id="panel-projects" data-panel="projects" hidden>
+          <div class="toolbar"><button data-tab-target="general">↑ Up</button><button data-tab-target="experience">Experience</button><span class="address-label">Address</span><input value="C:\Yuhao\Projects" readonly aria-label="Current path"></div>
+          <div class="explorer-layout">
+            <aside class="folder-tree">
+              <p><b>Folders</b></p>
+              <ul class="tree-view">
+                <li>🖥️ Yuhao Sun
+                  <ul>
+                    <li><button class="tree-button" data-tab-target="experience">📁 Experience</button></li>
+                    <li><span class="tree-label active">📂 Projects</span>
+                      <ul><li>⚙ CPQSystem Core</li><li>📐 Belt Selection</li><li>📝 Ceryle</li></ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+            <div class="explorer-content projects-content">
+              <div class="project-toolbar"><span>3 object(s)</span><button data-open-project="project-cpq">Properties</button></div>
+              <div class="sunken-panel project-table-wrap">
+                <table class="interactive project-table"><thead><tr><th>Name</th><th>Status</th><th>Type</th><th>Technology</th></tr></thead><tbody><tr data-project="project-cpq"><td>⚙ CPQSystem Core Platform</td><td>Running</td><td>Enterprise Platform</td><td>ASP.NET Core / PostgreSQL</td></tr><tr data-project="project-selection"><td>📐 Belt Selection Service</td><td>Running</td><td>Engineering Application</td><td>Blazor WASM / Canvas</td></tr><tr data-project="project-ceryle"><td>📝 Ceryle</td><td>Open Source</td><td>Document Automation</td><td>FastAPI / docxtpl</td></tr></tbody></table>
+              </div>
+
+              <div class="project-properties">
+                <details class="window project-dialog" id="project-cpq">
+                  <summary>⚙ CPQSystem Core Platform <span>Enterprise Platform</span></summary>
+                  <div class="window-body"><fieldset><legend>Summary</legend><p>An ASP.NET Core Modular Monolith connecting master data, rules, quotation, product planning, approvals, document generation, and ERP preparation.</p></fieldset><fieldset><legend>Technical details</legend><ul><li>Capability-oriented modules with explicit domain models, services, persistence mappings, and contracts.</li><li>Version-aware workflows for submission, approval, rejection, withdrawal, voiding, and audit history.</li><li>Configurable formula engine with chained modules, intermediate variables, and custom functions.</li><li>PostgreSQL module schemas, Redis, MassTransit, transactional inbox/outbox, Quartz, and Serilog.</li></ul></fieldset><div class="property-grid compact"><span>Architecture:</span><strong>Modular Monolith</strong><span>Runtime:</span><strong>.NET 10</strong><span>Data:</span><strong>PostgreSQL / Redis / EF Core</strong><span>Delivery:</span><strong>Docker / Nginx</strong></div></div>
+                </details>
+                <details class="window project-dialog" id="project-selection">
+                  <summary>📐 Belt Selection Service <span>Engineering Application</span></summary>
+                  <div class="window-body"><fieldset><legend>Summary</legend><p>A Blazor WebAssembly workspace for guided component selection, live engineering calculations, geometry simulation, technical visualization, and versioned selection offers.</p></fieldset><fieldset><legend>Technical details</legend><ul><li>Calculates capacity, filling rate, belt length, weight, tensions, power, safety factors, and cable arrangements.</li><li>Uses ray/segment collision, polygon construction, the shoelace algorithm, and binary search for material-area simulation.</li><li>Renders live belt cross-sections, cable layouts, and filling geometry through Canvas 2D.</li><li>Supports versioning, approval, A4 preview, printing, and PDF export.</li></ul></fieldset><div class="property-grid compact"><span>Client:</span><strong>Blazor WebAssembly</strong><span>Engineering:</span><strong>C# Geometry Algorithms</strong><span>Visuals:</span><strong>Canvas 2D</strong><span>Delivery:</span><strong>PWA / Docker / Nginx</strong></div></div>
+                </details>
+                <details class="window project-dialog" id="project-ceryle">
+                  <summary>📝 Ceryle <span>Document Automation</span></summary>
+                  <div class="window-body"><fieldset><legend>Summary</legend><p>A self-hosted FastAPI service that merges JSON data and images into Jinja-enabled Word templates through synchronous or queued rendering workflows.</p></fieldset><fieldset><legend>Technical details</legend><ul><li>Template-aware SHA-256 caching avoids repeated rendering for identical inputs.</li><li>A bounded asyncio queue and ProcessPoolExecutor provide backpressure and CPU isolation.</li><li>Template storage supports local files and S3-compatible object storage.</li><li>SQLite task persistence, scheduled cleanup, rotating logs, and an administration dashboard support operations.</li></ul></fieldset><div class="property-grid compact"><span>API:</span><strong>FastAPI</strong><span>Rendering:</span><strong>docxtpl / Jinja2</strong><span>Queue:</span><strong>asyncio / Process Pool</strong><span>Source:</span><strong><a href="https://github.com/CheesePanzer/Ceryle" target="_blank" rel="noreferrer">GitHub ↗</a></strong></div></div>
+                </details>
+              </div>
+            </div>
+          </div>
+          <div class="status-bar"><p class="status-bar-field">3 object(s)</p><p class="status-bar-field">Selected projects loaded successfully</p></div>
+        </div>
+
+        <div class="window tab-workspace education-panel" role="tabpanel" id="panel-education" data-panel="education" hidden>
+          <div class="notepad-menu"><span>File</span><span>Edit</span><span>Search</span><span>Help</span></div>
+          <div class="sunken-panel notepad-content"><p><b>MASTER OF SCIENCE IN INFORMATION TECHNOLOGY</b><br>The Hong Kong University of Science and Technology<br>September 2026 - June 2027 (Expected)</p><p>------------------------------------------------------------</p><p><b>BACHELOR OF SCIENCE IN INFORMATION MANAGEMENT AND INFORMATION SYSTEMS</b><br>Beihang University<br>September 2019 - June 2023</p><p><b>Teaching Assistant (Python)</b><br>Led weekly programming labs for more than 50 undergraduate students, designed and graded practical assignments, and provided guidance on programming concepts and code debugging.</p></div>
+          <div class="status-bar"><p class="status-bar-field">Ln 1, Col 1</p><p class="status-bar-field">100%</p><p class="status-bar-field">Windows (CRLF)</p></div>
+        </div>
+      </div>
+
+      <div class="status-bar main-status"><p class="status-bar-field" id="main-status">General profile</p><p class="status-bar-field">Phone: +852 6399 8879</p><p class="status-bar-field">Email: ysunfz@connect.ust.hk</p></div>
+    </section>
+  </main>
+
+  <section class="window resume-window desktop-dialog" id="resume-window" aria-label="Resume.md - Notepad" hidden>
+    <div class="title-bar" id="resume-title-bar">
+      <div class="title-bar-text">Resume.md - Notepad</div>
+      <div class="title-bar-controls"><button aria-label="Minimize" id="minimize-resume"></button><button aria-label="Maximize" id="maximize-resume"></button><button aria-label="Close" id="close-resume"></button></div>
+    </div>
+    <div class="notepad-menu resume-menu"><button type="button">File</button><button type="button">Edit</button><button type="button">Search</button><button type="button">Help</button></div>
+    <div class="resume-toolbar"><button type="button" id="print-resume">Print...</button><span>Address</span><input value="C:\Yuhao\Resume.md" readonly aria-label="Document path"></div>
+    <div class="sunken-panel resume-document" id="resume-document" tabindex="0" aria-live="polite"><p>Opening Resume.md...</p></div>
+    <div class="status-bar"><p class="status-bar-field" id="resume-status">Markdown not loaded</p><p class="status-bar-field">UTF-8</p><p class="status-bar-field">Markdown</p></div>
+  </section>
+
+  <aside class="start-menu window" id="start-menu" aria-hidden="true">
+    <div class="start-side"><b>Yuhao</b><span>98</span></div>
+    <nav><button data-tab-target="general">🖥️ <span><b>About Me</b><small>View profile properties</small></span></button><button data-tab-target="experience">📁 <span><b>Experience</b><small>Open career history</small></span></button><button data-tab-target="projects">⚙️ <span><b>Projects</b><small>Open selected projects</small></span></button><button data-tab-target="education">📄 <span><b>Education</b><small>Open Education.txt</small></span></button><hr><a href="mailto:ysunfz@connect.ust.hk">✉️ <span><b>Send Email...</b><small>Professional contact</small></span></a></nav>
+  </aside>
+
+  <footer class="taskbar">
+    <button class="start-button" id="start-button" aria-expanded="false" aria-controls="start-menu"><span class="windows-mark">▦</span><b>Start</b></button>
+    <div class="task-divider"></div>
+    <button class="task-button active" id="profile-task" type="button">🖥️ Yuhao Sun - Profile Properties</button>
+    <button class="task-button resume-task" id="resume-task" type="button" hidden>📄 Resume.md - Notepad</button>
+    <div class="tray"><span>🔊</span><time id="clock">--:-- PM</time></div>
+  </footer>
+</body>
+</html>

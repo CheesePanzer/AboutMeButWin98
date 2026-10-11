@@ -1,0 +1,26 @@
+.resume-desktop { display: grid; min-height: 100vh; padding: 10px 10px 50px; place-items: start center; }
+.resume-desktop .resume-window { position: static; width: min(1120px, 100%); height: calc(100vh - 60px); }
+.desktop-dialog { position: fixed; z-index: 50; top: 5vh; left: 50%; display: flex; flex-direction: column; width: min(1050px, calc(100vw - 130px)); height: min(86vh, 820px); overflow: hidden; transform: translateX(-50%); }
+.desktop-dialog[hidden] { display: none; }
+.desktop-dialog.maximized { top: 3px !important; right: 3px; bottom: 43px; left: 3px !important; width: auto; height: auto; transform: none; }
+.desktop-dialog.minimized { display: none; }
+.desktop-dialog > .title-bar { cursor: move; touch-action: none; }
+.resume-menu { display: flex; gap: 2px; padding: 2px 5px; }
+.resume-menu button { min-width: 0; padding: 2px 7px; border: 0; background: transparent; box-shadow: none; }
+.resume-menu button:hover { color: white; background: #000080; }
+.resume-toolbar { display: flex; align-items: center; gap: 5px; padding: 4px 5px; border-top: 1px solid white; border-bottom: 1px solid #808080; background: #c0c0c0; }
+.resume-toolbar span { margin-left: 6px; }
+.resume-toolbar input { flex: 1; min-width: 0; height: 23px; }
+.resume-document { flex: 1 1 auto; min-height: 0; margin: 3px; padding: clamp(18px, 4vw, 48px); overflow: auto; background: white; color: black; font: 15px/1.55 "Lucida Console", "Courier New", monospace; }
+.resume-document h1 { margin: 0 0 12px; color: #000080; font: bold clamp(28px, 5vw, 44px)/1.1 "Arial", sans-serif; }
+.resume-document h2 { margin: 28px 0 10px; padding-bottom: 4px; border-bottom: 1px solid #808080; color: #000080; font: bold 20px/1.2 "Arial", sans-serif; }
+.resume-document h3 { margin: 20px 0 5px; font: bold 16px/1.25 "Arial", sans-serif; }
+.resume-document p { margin: 7px 0; }
+.resume-document ul { margin: 7px 0 14px; padding-left: 25px; }
+.resume-document li { margin-bottom: 5px; }
+.resume-document hr { margin: 22px 0; border: 0; border-top: 1px dashed #808080; }
+.resume-document a { color: #000080; }
+.resume-document em { color: #444; }
+.resume-document code { padding: 1px 3px; background: #e8e8e8; }
+@media (max-width: 620px) { .resume-desktop { padding: 4px 4px 44px; }.resume-desktop .resume-window { height: calc(100vh - 50px); }.desktop-dialog { top: 4px; left: 4px; width: calc(100vw - 8px); height: calc(100vh - 48px); transform: none; }.resume-toolbar span,.resume-toolbar input { display: none; }.resume-document { padding: 15px; font-size: 13px; }.resume-document h2 { font-size: 17px; } }
+@media print { .resume-desktop { display: block; padding: 0; background: white; }.resume-window { width: 100%; height: auto; border: 0; box-shadow: none; }.resume-window > .title-bar,.resume-menu,.resume-toolbar,.resume-window > .status-bar,.taskbar { display: none !important; }.resume-document { height: auto; margin: 0; padding: 0; overflow: visible; border: 0; box-shadow: none; font: 10pt/1.35 Arial,sans-serif; }.resume-document h1 { font-size: 22pt; }.resume-document h2 { margin-top: 14pt; font-size: 13pt; }.resume-document h3 { font-size: 11pt; } }
